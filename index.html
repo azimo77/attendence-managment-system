@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Attendance Management System</h1>
+
+    <div class="container">
+        <label for="studentName">Student Full Name</label>
+        <input 
+            type="text" 
+            id="studentName" 
+            placeholder="Enter full name (at least 3 names)">
+
+        <label for="status">Attendance Status</label>
+        <select id="status">
+            <option value="">Select status</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+
+        <button id="addBtn">Add Attendance</button>
+
+        <p id="message"></p>
+    </div>
+
+    <h2>Attendance List</h2>
+    <ul id="attendanceList"></ul>
+
+    <div class="summary">
+        <p>Present: <span id="presentCount">0</span></p>
+        <p>Absent: <span id="absentCount">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
